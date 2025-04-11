@@ -1,16 +1,6 @@
 # promaison
 
-A new Flutter project.
+## 🎨 System design
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![core system design](https://github.com/user-attachments/assets/f7591eb5-c333-41a3-a84e-4a3a86f61f7b)
+![feature system design](https://github.com/user-attachments/assets/e62c2b9b-4100-41b3-b69d-2a6f33461744)
