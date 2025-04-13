@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:promaison/core/routing/app_router.dart';
+import 'package:promaison/core/theming/colors.dart';
 
 import 'core/routing/routes.dart';
 
@@ -17,6 +18,10 @@ class PromaisonApp extends StatelessWidget {
         title: 'Promaison',
         onGenerateRoute: appRouter.generateRoute,
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primaryColor: AppColors.mainColor,
+          scaffoldBackgroundColor: Colors.white,
+        ),
         initialRoute: Routes.onBoardingScreen,
       ),
     );
