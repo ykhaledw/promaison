@@ -4,8 +4,8 @@ import 'package:promaison/core/theming/colors.dart';
 import 'package:promaison/core/theming/font_weight_helper.dart';
 
 class TextStyles {
-  static TextStyle font18BrownRegular = TextStyle(
-    fontSize: 18.sp,
+  static TextStyle font16BrownRegular = TextStyle(
+    fontSize: 16.sp,
     color: AppColors.brown,
     fontWeight: FontWeightHelper.regular,
   );
