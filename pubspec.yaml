@@ -28,31 +28,24 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  #A build system for Dart code generation and modular compilation
   build_runner: ^2.4.15
   cupertino_icons: ^1.0.6
-  # Networking
   dio: ^5.8.0+1
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.0
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.0.17
+  freezed: ^3.0.6
+  freezed_annotation: ^3.0.0
+  get_it: ^8.0.3
+  google_fonts: ^6.2.1
+  json_annotation: ^4.9.0
+  json_serializable: ^6.9.4
   pretty_dio_logger: ^1.4.0
   retrofit: ^4.4.2
   retrofit_generator: ^9.1.9
-  flutter:
-    sdk: flutter
-  # State management
-  flutter_bloc: ^9.1.0
-  # for adapting screen and font size.
-  flutter_screenutil: ^5.9.3
-  # An SVG rendering and widget library for Flutter, which allows painting 
-  flutter_svg: ^2.0.17
-  # Code generator (mainly used with cubit & retrofit)
-  freezed: ^3.0.6
-  freezed_annotation: ^3.0.0
-  # for dependency injection
-  get_it: ^8.0.3
-  # Automatically generate code for converting to and from JSON by annotating Dart classes
-  json_annotation: ^4.9.0
-  json_serializable: ^6.9.4
-  
+  smooth_page_indicator: ^1.2.1
 
 dev_dependencies:
   flutter_lints: ^3.0.0
@@ -81,10 +74,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+   - family: Frank Ruhl Libre
+     fonts:
+      - asset: assets/fonts/FrankRuhlLibre-Bold.ttf
+   - family: Roboto
+     fonts:
+      - asset: assets/fonts/Roboto-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

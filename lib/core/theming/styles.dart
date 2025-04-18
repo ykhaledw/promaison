@@ -8,6 +8,7 @@ class TextStyles {
     fontSize: 16.sp,
     color: AppColors.brown,
     fontWeight: FontWeightHelper.regular,
+    fontFamily: 'Roboto',
   );
 
   static TextStyle font27OrangeBold = TextStyle(
