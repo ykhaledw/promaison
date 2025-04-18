@@ -34,6 +34,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.0
+  flutter_native_splash: ^2.4.6
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.17
   freezed: ^3.0.6
@@ -74,12 +75,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-   - family: Frank Ruhl Libre
-     fonts:
-      - asset: assets/fonts/FrankRuhlLibre-Bold.ttf
-   - family: Roboto
-     fonts:
-      - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Frank Ruhl Libre
+      fonts:
+        - asset: assets/fonts/FrankRuhlLibre-Bold.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
