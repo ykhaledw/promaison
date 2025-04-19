@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:promaison/features/login/ui/widgets/sms_code_screen_widgets.dart';
 
 import 'widgets/login_background.dart';
-import 'widgets/login_screen_widgets.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SmsCodeScreen extends StatelessWidget {
+  const SmsCodeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class LoginScreen extends StatelessWidget {
       body: Stack(
         children: [
           loginBackground(),
-          loginWidgets(context),
+          smsCodeWidgets(),
         ],
       ),
     );

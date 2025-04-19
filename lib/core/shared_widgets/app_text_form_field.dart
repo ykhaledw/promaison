@@ -16,10 +16,12 @@ Widget appTextFormField({
   Widget? suffixIcon,
   Color? backgroundColor,
   required Function(String?) validator,
+  TextInputType? keyboardType,
 }) {
   return TextFormField(
     controller: controller,
     textAlign: TextAlign.end,
+    keyboardType: keyboardType,
     decoration: InputDecoration(
       isDense: true,
       contentPadding: contentPadding ??
