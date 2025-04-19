@@ -4,6 +4,12 @@ import 'package:promaison/core/theming/colors.dart';
 import 'package:promaison/core/theming/font_weight_helper.dart';
 
 class TextStyles {
+  static TextStyle font15GreyRegular = TextStyle(
+    fontSize: 15.sp,
+    color: Colors.grey,
+    fontWeight: FontWeightHelper.regular,
+  );
+
   static TextStyle font16BrownRegular = TextStyle(
     fontSize: 16.sp,
     color: AppColors.brown,
@@ -27,5 +33,29 @@ class TextStyles {
     fontSize: 18.sp,
     color: Colors.white,
     fontWeight: FontWeightHelper.extraBold,
+  );
+
+  static TextStyle font17WhiteSemiBold = TextStyle(
+    fontSize: 17.sp,
+    color: Colors.white,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+
+  static TextStyle font24BlackExtraBold = TextStyle(
+    fontSize: 24.sp,
+    color: Colors.black,
+    fontWeight: FontWeightHelper.extraBold,
+  );
+
+  static TextStyle font18BlackSemiBold = TextStyle(
+    fontSize: 18.sp,
+    color: Colors.black,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+
+  static TextStyle font17WhiteRegular = TextStyle(
+    fontSize: 17.sp,
+    color: Colors.white,
+    fontWeight: FontWeightHelper.regular,
   );
 }
