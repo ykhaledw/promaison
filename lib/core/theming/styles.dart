@@ -58,4 +58,10 @@ class TextStyles {
     color: Colors.white,
     fontWeight: FontWeightHelper.regular,
   );
+
+  static TextStyle font16darkGreySemiBold = TextStyle(
+    fontSize: 16.sp,
+    color: AppColors.darkGrey,
+    fontWeight: FontWeightHelper.semiBold,
+  );
 }

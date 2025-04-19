@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:promaison/core/routing/routes.dart';
+import 'package:promaison/features/home/ui/home_screen.dart';
 import 'package:promaison/features/login/ui/login_screen.dart';
+import 'package:promaison/features/login/ui/sms_code_screen.dart';
 import 'package:promaison/features/onboarding/onboarding_screen.dart';
 
 class AppRouter {
@@ -14,6 +16,16 @@ class AppRouter {
       case Routes.loginScreen:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),
+        );
+
+      case Routes.smsCodeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const SmsCodeScreen(),
+        );
+
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
         );
 
       default:
