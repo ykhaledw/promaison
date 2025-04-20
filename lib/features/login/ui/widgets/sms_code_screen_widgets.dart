@@ -8,7 +8,11 @@ import 'package:promaison/features/login/ui/widgets/sms_screen_components/sms_sc
 import 'package:promaison/features/login/ui/widgets/sms_screen_components/wrong_action_indicator.dart';
 import '../../../../core/helpers/spacing.dart';
 
-Widget smsCodeWidgets() {
+Widget smsCodeWidgets(
+  BuildContext context, {
+  required List<TextEditingController> controllers,
+  required List<FocusNode> focusNodes,
+}) {
   return Scaffold(
     backgroundColor: Colors.transparent,
     body: SingleChildScrollView(
@@ -30,7 +34,11 @@ Widget smsCodeWidgets() {
                   verticalSpace(27),
                   smsScreenText(),
                   verticalSpace(10),
-                  otpField(),
+                  otpField(
+                    context,
+                    controllers: controllers,
+                    focusNodes: focusNodes,
+                  ),
                   wrongActionIndicator(),
                   resendCodeTimer(),
                   verticalSpace(30),
