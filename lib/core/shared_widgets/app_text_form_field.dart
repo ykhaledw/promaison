@@ -17,10 +17,13 @@ Widget appTextFormField({
   Color? backgroundColor,
   required Function(String?) validator,
   TextInputType? keyboardType,
+  FocusNode? focusNode,
+  TextAlign? textAlign,
+  void Function(String)? onChanged,
 }) {
   return TextFormField(
     controller: controller,
-    textAlign: TextAlign.end,
+    textAlign: textAlign ?? TextAlign.end,
     keyboardType: keyboardType,
     decoration: InputDecoration(
       isDense: true,
@@ -42,20 +45,22 @@ Widget appTextFormField({
             ),
             borderRadius: BorderRadius.circular(30),
           ),
-      errorBorder: errorBorder ?? OutlineInputBorder(
-        borderSide: const BorderSide(
-          color: AppColors.mainColor,
-          width: 1.3,
-        ),
-        borderRadius: BorderRadius.circular(30),
-      ),
-      focusedErrorBorder: focusedErrorBorder ?? OutlineInputBorder(
-        borderSide: const BorderSide(
-          color: AppColors.mainColor,
-          width: 1.3,
-        ),
-        borderRadius: BorderRadius.circular(30),
-      ),
+      errorBorder: errorBorder ??
+          OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.mainColor,
+              width: 1.3,
+            ),
+            borderRadius: BorderRadius.circular(30),
+          ),
+      focusedErrorBorder: focusedErrorBorder ??
+          OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.mainColor,
+              width: 1.3,
+            ),
+            borderRadius: BorderRadius.circular(30),
+          ),
       hintStyle: hintStyle ?? TextStyles.font15GreyRegular,
       hintText: hintText,
       suffixIcon: suffixIcon,
@@ -66,5 +71,7 @@ Widget appTextFormField({
     validator: (value) {
       return validator(value);
     },
+    focusNode: focusNode,
+    onChanged: onChanged,
   );
 }
