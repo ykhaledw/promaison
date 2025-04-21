@@ -15,85 +15,80 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Widget pageIndicator = SmoothPageIndicator(
+      effect: ExpandingDotsEffect(
+        activeDotColor: Colors.black,
+        dotHeight: 7.h,
+        radius: 16.r,
+        dotWidth: 10.w,
+        dotColor: AppColors.lightGrey,
+      ),
+      controller: pageController,
+      count: 3,
+      onDotClicked: (index) {
+        pageController.animateToPage(
+          index,
+          duration: Durations.medium1,
+          curve: Curves.linear,
+        );
+      },
+    );
     return Scaffold(
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w),
-          child: Stack(
-            alignment: Alignment.center,
+          child: PageView(
+            controller: pageController,
             children: [
-              PageView(
-                controller: pageController,
-                children: [
-                  //First onboarding screen
-                  onBoardingComponents(
-                    imagePath: 'assets/svgs/onboarding_logo_1.svg',
-                    boldText: S.of(context).chooseYourPreferedService,
-                    subtitle: S.of(context).chooseYourServiceSubtitle,
-                    buttonText: S.of(context).next,
-                    suffixIcon: const Icon(
-                      Icons.arrow_forward,
-                      color: Colors.white,
-                    ),
-                    onTap: () {
-                      pageController.animateToPage(
-                        1,
-                        duration: Durations.medium1,
-                        curve: Curves.linear,
-                      );
-                    },
-                  ),
-                  //Second onboarding screen
-                  onBoardingComponents(
-                    imagePath: 'assets/svgs/onboarding_logo_2.svg',
-                    boldText: S.of(context).buyAnyPiece,
-                    subtitle: S.of(context).buyAnyPieceSubtitle,
-                    buttonText: S.of(context).next,
-                    suffixIcon: const Icon(
-                      Icons.arrow_forward,
-                      color: Colors.white,
-                    ),
-                    onTap: () {
-                      pageController.animateToPage(
-                        2,
-                        duration: Durations.medium1,
-                        curve: Curves.linear,
-                      );
-                    },
-                  ),
-                  //Third onboardign screen
-                  onBoardingComponents(
-                      imagePath: 'assets/svgs/onboarding_logo_3.2.svg',
-                      boldText: S.of(context).offeringVIPService,
-                      subtitle: S.of(context).offeringVIPServiceSubtitle,
-                      buttonText: S.of(context).getStarted,
-                      onTap: () {
-                        context.pushNamed(Routes.loginScreen);
-                      },
-                      secondLogoPath: 'assets/svgs/onboarding_logo_3.1.svg'),
-                ],
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 80.h),
-                child: SmoothPageIndicator(
-                  effect: ExpandingDotsEffect(
-                    activeDotColor: Colors.black,
-                    dotHeight: 7.h,
-                    radius: 16.r,
-                    dotWidth: 10.w,
-                    dotColor: AppColors.lightGrey,
-                  ),
-                  controller: pageController,
-                  count: 3,
-                  onDotClicked: (index) {
-                    pageController.animateToPage(
-                      index,
-                      duration: Durations.medium1,
-                      curve: Curves.linear,
-                    );
-                  },
+              //First onboarding screen
+              onBoardingComponents(
+                imagePath: 'assets/images/onboarding_logo_1.png',
+                boldText: S.of(context).chooseYourPreferedService,
+                subtitle: S.of(context).chooseYourServiceSubtitle,
+                buttonText: S.of(context).next,
+                suffixIcon: const Icon(
+                  Icons.arrow_forward,
+                  color: Colors.white,
                 ),
+                onTap: () {
+                  pageController.animateToPage(
+                    1,
+                    duration: Durations.medium1,
+                    curve: Curves.linear,
+                  );
+                },
+                pageIndicator: pageIndicator,
               ),
+              //Second onboarding screen
+              onBoardingComponents(
+                imagePath: 'assets/images/onboarding_logo_2.png',
+                boldText: S.of(context).buyAnyPiece,
+                subtitle: S.of(context).buyAnyPieceSubtitle,
+                buttonText: S.of(context).next,
+                suffixIcon: const Icon(
+                  Icons.arrow_forward,
+                  color: Colors.white,
+                ),
+                onTap: () {
+                  pageController.animateToPage(
+                    2,
+                    duration: Durations.medium1,
+                    curve: Curves.linear,
+                  );
+                },
+                pageIndicator: pageIndicator,
+              ),
+              //Third onboardign screen
+              onBoardingComponents(
+                  imagePath: 'assets/images/onboarding_logo_3.2.png',
+                  boldText: S.of(context).offeringVIPService,
+                  subtitle: S.of(context).offeringVIPServiceSubtitle,
+                  buttonText: S.of(context).getStarted,
+                  onTap: () {
+                    context.pushNamed(Routes.loginScreen);
+                  },
+                  pageIndicator: pageIndicator,
+                  secondLogoPath: 'assets/images/onboarding_logo_3.1.png'),
             ],
           ),
         ),
