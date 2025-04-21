@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:promaison/core/helpers/spacing.dart';
 
 import 'onboarding_bold_text.dart';
 import 'onboarding_button.dart';
@@ -16,6 +17,7 @@ Widget onBoardingComponents({
   required void Function() onTap,
   Widget? suffixIcon,
   String? secondLogoPath,
+  required Widget pageIndicator,
 }) {
   return Padding(
     padding: EdgeInsets.only(top: 13.h),
@@ -26,6 +28,8 @@ Widget onBoardingComponents({
           height: 12.h,
         ),
         onboardingLogo(imagePath, secondLogoPath: secondLogoPath),
+        verticalSpace(15),
+        pageIndicator,
         SizedBox(
           height: 26.h,
         ),

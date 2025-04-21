@@ -8,7 +8,7 @@ import '../../../../../generated/l10n.dart';
 
 Widget wrongActionIndicator(BuildContext context) {
   return Padding(
-    padding: EdgeInsets.only(top: 16.h, bottom: 20.h),
+    padding: EdgeInsets.only(top: 16.h),
     child: Center(
       child: Container(
         width: 262.w,

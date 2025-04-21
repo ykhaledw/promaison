@@ -15,7 +15,6 @@ Widget otpItem(BuildContext context,
       controller: controllers[index],
       focusNode: focusNodes[index],
       keyboardType: TextInputType.number,
-      textAlign: TextAlign.center,
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(
           color: Colors.black.withValues(alpha: 0.11),

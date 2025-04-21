@@ -12,6 +12,7 @@ Widget smsCodeWidgets(
   BuildContext context, {
   required List<TextEditingController> controllers,
   required List<FocusNode> focusNodes,
+  bool isWrongCode = false,
 }) {
   return Scaffold(
     backgroundColor: Colors.transparent,
@@ -39,7 +40,8 @@ Widget smsCodeWidgets(
                     controllers: controllers,
                     focusNodes: focusNodes,
                   ),
-                  wrongActionIndicator(context),
+                  if (isWrongCode) wrongActionIndicator(context),
+                  verticalSpace(isWrongCode ? 20 : 80),
                   resendCodeTimer(context),
                   verticalSpace(30),
                   confirmButton(context),
