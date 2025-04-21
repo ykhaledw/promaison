@@ -23,12 +23,12 @@ Widget appTextFormField({
 }) {
   return TextFormField(
     controller: controller,
-    textAlign: textAlign ?? TextAlign.end,
+    textAlign: textAlign ?? TextAlign.start,
     keyboardType: keyboardType,
     decoration: InputDecoration(
       isDense: true,
       contentPadding: contentPadding ??
-          EdgeInsetsDirectional.only(top: 15.h, bottom: 15.h, end: 22.w),
+          EdgeInsetsDirectional.only(top: 15.h, bottom: 15.h, start: 22.w),
       focusedBorder: focusedBorder ??
           OutlineInputBorder(
             borderSide: BorderSide(

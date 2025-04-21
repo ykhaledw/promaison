@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/helpers/spacing.dart';
 import '../../../../../core/theming/styles.dart';
+import '../../../../../generated/l10n.dart';
 
-Widget smsScreenText() {
+Widget smsScreenText(BuildContext context) {
   return Column(
-    crossAxisAlignment: CrossAxisAlignment.end,
+    crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(
-        'رمز تأكيد',
+        S.of(context).otp,
         style: TextStyles.font24BlackExtraBold,
       ),
       verticalSpace(6),
@@ -16,13 +17,7 @@ Widget smsScreenText() {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Text(
-            'المكون من 6 أرفام OTP أدخل رمز التأكيد',
-            style: TextStyles.font16BrownRegular.copyWith(
-              color: Colors.grey.withValues(alpha: 0.7),
-            ),
-          ),
-          Text(
-            ' الذي تم إرساله إلى رقم الهاتف 8116 777 56 213',
+            S.of(context).enterReceivedOTP,
             style: TextStyles.font16BrownRegular.copyWith(
               color: Colors.grey.withValues(alpha: 0.7),
             ),
