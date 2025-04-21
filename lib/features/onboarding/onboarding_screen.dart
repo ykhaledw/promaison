@@ -6,6 +6,7 @@ import 'package:promaison/features/onboarding/widgets/onboarding_components.dart
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../core/routing/routes.dart';
+import '../../generated/l10n.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -27,10 +28,9 @@ class OnboardingScreen extends StatelessWidget {
                   //First onboarding screen
                   onBoardingComponents(
                     imagePath: 'assets/svgs/onboarding_logo_1.svg',
-                    boldText: 'أختر كل ما تحتاجه من خدماتنا',
-                    subtitle:
-                        'متخصصة في مجال الكهرباء، تكييف، مصاعد، السباكة،وخدمات أخرى وتمتلك الشركة خبرات وكوادر ذات كفاءة عالية',
-                    buttonText: 'التالي',
+                    boldText: S.of(context).chooseYourPreferedService,
+                    subtitle: S.of(context).chooseYourServiceSubtitle,
+                    buttonText: S.of(context).next,
                     suffixIcon: const Icon(
                       Icons.arrow_forward,
                       color: Colors.white,
@@ -46,10 +46,9 @@ class OnboardingScreen extends StatelessWidget {
                   //Second onboarding screen
                   onBoardingComponents(
                     imagePath: 'assets/svgs/onboarding_logo_2.svg',
-                    boldText: 'اشتري كل القطع لمنزلك بسهولة ',
-                    subtitle:
-                        'نتطلع لتقديم خدمة متكاملة لأعمال صيانة المنازل التي يحتاج إليها ٍ عملائنا بشكل احترافي لنكون الخيار الأول لهم',
-                    buttonText: 'التالي',
+                    boldText: S.of(context).buyAnyPiece,
+                    subtitle: S.of(context).buyAnyPieceSubtitle,
+                    buttonText: S.of(context).next,
                     suffixIcon: const Icon(
                       Icons.arrow_forward,
                       color: Colors.white,
@@ -65,10 +64,9 @@ class OnboardingScreen extends StatelessWidget {
                   //Third onboardign screen
                   onBoardingComponents(
                       imagePath: 'assets/svgs/onboarding_logo_3.2.svg',
-                      boldText: 'توفير  خدمة (VIP)',
-                      subtitle:
-                          ' vip هي خدمة يمكنك الاشتراك بها باشتراك سنوي  مع إمكانية الدفع بشكل شهري واضمن صيانة منزلك او منشأتك',
-                      buttonText: 'هيا بنا نبدء',
+                      boldText: S.of(context).offeringVIPService,
+                      subtitle: S.of(context).offeringVIPServiceSubtitle,
+                      buttonText: S.of(context).getStarted,
                       onTap: () {
                         context.pushNamed(Routes.loginScreen);
                       },

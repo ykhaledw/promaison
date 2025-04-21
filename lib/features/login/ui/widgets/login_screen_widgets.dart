@@ -9,6 +9,7 @@ import 'package:promaison/features/login/ui/widgets/login_components/login_text.
 import 'package:promaison/features/login/ui/widgets/login_components/phone_number_field.dart';
 
 import '../../../../core/routing/routes.dart';
+import '../../../../generated/l10n.dart';
 
 Widget loginWidgets(BuildContext context) {
   return Scaffold(
@@ -31,7 +32,7 @@ Widget loginWidgets(BuildContext context) {
             const Icon(Icons.arrow_back),
             horizontalSpace(10),
             Text(
-              'تخطي التسجيل',
+              S.of(context).skipLogin,
               style: TextStyles.font17WhiteSemiBold,
             ),
           ],
@@ -52,14 +53,14 @@ Widget loginWidgets(BuildContext context) {
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 21.w),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   verticalSpace(27),
-                  loginText(),
+                  loginText(context),
                   verticalSpace(20),
-                  phoneNumberField(),
+                  phoneNumberField(context),
                   verticalSpace(20),
-                  conditionsText(),
+                  conditionsText(context),
                   verticalSpace(27),
                   loginButton(context),
                   verticalSpace(16),

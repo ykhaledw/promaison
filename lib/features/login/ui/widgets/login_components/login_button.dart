@@ -4,6 +4,7 @@ import 'package:promaison/core/helpers/extensions.dart';
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/shared_widgets/app_text_button.dart';
 import '../../../../../core/theming/styles.dart';
+import '../../../../../generated/l10n.dart';
 
 Widget loginButton(BuildContext context) {
   return appTextButton(
@@ -12,7 +13,7 @@ Widget loginButton(BuildContext context) {
       //     predicate: (Route<dynamic> route) => false);
       context.pushNamed(Routes.smsCodeScreen);
     },
-    buttonText: 'تسجيل الدخول',
+    buttonText: S.of(context).login,
     textStyle: TextStyles.font18WhiteExtraBold,
   );
 }

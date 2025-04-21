@@ -5,5 +5,6 @@ Widget onBoardingBoldText(String text) {
   return Text(
     text,
     style: TextStyles.font27OrangeBold,
+    textAlign: TextAlign.center,
   );
 }

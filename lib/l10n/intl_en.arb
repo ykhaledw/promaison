@@ -1,0 +1,23 @@
+{
+    "chooseYourPreferedService": "Choose all the services you need from us",
+  "chooseYourServiceSubtitle": "Specialized in electrical work, air conditioning, elevators, plumbing, and other services. The company has experienced and highly qualified staff.",
+  "next": "Next",
+  "buyAnyPiece": "Buy all the parts for your home with ease",
+  "buyAnyPieceSubtitle": "We strive to provide a comprehensive service for home maintenance work that our clients need professionally, to be their first choice.",
+  "offeringVIPService": "Offering VIP Service",
+  "offeringVIPServiceSubtitle": "VIP is a service you can subscribe to annually with the option of monthly payments, ensuring the maintenance of your home or facility.",
+  "getStarted" : "Get started",
+  "skipLogin" : "Skip login",
+  "login": "Login",
+  "loginUsingPhone": "Log in using your phone number",
+  "enterYourNumber": "Enter your phone number here",
+  "conditionsText": "By completing registration, you agree to the terms and conditions of PROMAISON",
+  "readConditions": "Read the terms",
+  "otp": "Verification Code",
+  "enterReceivedOTP": "Enter the 4-digit OTP sent to your phone number",
+  "youCanResendCode": "You can resend the code in",
+  "confirm": "Confirm",
+  "resend": "Resend",
+  "wrongCode": "Incorrect code",
+  "requiredField": "This field is required"
+}

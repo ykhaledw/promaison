@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:promaison/core/routing/app_router.dart';
 import 'package:promaison/core/theming/colors.dart';
+import 'package:promaison/generated/l10n.dart';
 
 import 'core/routing/routes.dart';
 
@@ -15,6 +17,14 @@ class PromaisonApp extends StatelessWidget {
       designSize: const Size(428, 926),
       minTextAdapt: true,
       child: MaterialApp(
+        locale: const Locale('ar'),
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
         title: 'Promaison',
         onGenerateRoute: appRouter.generateRoute,
         debugShowCheckedModeBanner: false,
