@@ -19,5 +19,6 @@
     "confirm" : "تأكيد",
     "resend" : "إعادة إرسال",
     "wrongCode" : "الكود غير صحيح",
-    "requiredField" : "هذا الحقل مطلوب"
+    "requiredField" : "هذا الحقل مطلوب",
+    "termsAndConditions" : "الشروط و الأحكام"
 }

@@ -19,5 +19,6 @@
   "confirm": "Confirm",
   "resend": "Resend",
   "wrongCode": "Incorrect code",
-  "requiredField": "This field is required"
+  "requiredField": "This field is required",
+  "termsAndConditions" : "Terms & Conditions"
 }

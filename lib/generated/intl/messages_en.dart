@@ -63,6 +63,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "resend": MessageLookupByLibrary.simpleMessage("Resend"),
     "skipLogin": MessageLookupByLibrary.simpleMessage("Skip login"),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "Terms & Conditions",
+    ),
     "wrongCode": MessageLookupByLibrary.simpleMessage("Incorrect code"),
     "youCanResendCode": MessageLookupByLibrary.simpleMessage(
       "You can resend the code in",
