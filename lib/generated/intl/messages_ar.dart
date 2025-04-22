@@ -61,6 +61,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "requiredField": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
     "resend": MessageLookupByLibrary.simpleMessage("إعادة إرسال"),
     "skipLogin": MessageLookupByLibrary.simpleMessage("تخطي التسجيل"),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "الشروط و الأحكام",
+    ),
     "wrongCode": MessageLookupByLibrary.simpleMessage("الكود غير صحيح"),
     "youCanResendCode": MessageLookupByLibrary.simpleMessage(
       "يمكنك إعادة إرسال الكود خلال",
