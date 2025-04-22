@@ -1,5 +1,9 @@
+import 'dart:developer';
+
+import 'package:country_pickers/country_pickers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:promaison/core/helpers/spacing.dart';
 
 import '../../../../../core/shared_widgets/app_text_form_field.dart';
 import '../../../../../core/theming/colors.dart';
@@ -20,23 +24,39 @@ Widget phoneNumberField(BuildContext context) {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Container(
-            // height: 58.h,
-            width: 73.w,
-            decoration: BoxDecoration(
-              color: AppColors.mainColor,
-              borderRadius: BorderRadiusDirectional.only(
-                bottomStart: Radius.circular(30.r),
-                topStart: Radius.circular(30.r),
-              ),
-            ),
-            padding: EdgeInsets.symmetric(vertical: 18.h),
-            child: Center(
-              child: Text(
-                '+21313',
-                style: TextStyles.font17WhiteRegular,
-              ),
-            ),
+          CountryPickerDropdown(
+            onValuePicked: (value) {
+              log(value.name);
+            },
+            icon: const SizedBox.shrink(),
+            selectedItemBuilder: (country) {
+              return Container(
+                decoration: BoxDecoration(
+                  color: AppColors.mainColor,
+                  borderRadius: BorderRadiusDirectional.only(
+                    bottomStart: Radius.circular(30.r),
+                    topStart: Radius.circular(30.r),
+                  ),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 18.h),
+                child: Center(
+                  child: Text(
+                    "+${country.phoneCode}",
+                    style: TextStyles.font17WhiteRegular,
+                  ),
+                ),
+              );
+            },
+            itemHeight: 60.h,
+            itemBuilder: (country) {
+              return Row(
+                children: <Widget>[
+                  CountryPickerUtils.getDefaultFlagImage(country),
+                  horizontalSpace(8),
+                  Text("+${country.phoneCode}"),
+                ],
+              );
+            },
           ),
           Expanded(
             child: appTextFormField(
@@ -44,6 +64,7 @@ Widget phoneNumberField(BuildContext context) {
               validator: (value) {},
               enabledBorder: InputBorder.none,
               keyboardType: TextInputType.number,
+              contentPadding: EdgeInsets.zero,
             ),
           ),
         ],
