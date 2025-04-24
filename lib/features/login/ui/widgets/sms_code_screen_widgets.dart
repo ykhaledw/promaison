@@ -42,7 +42,7 @@ Widget smsCodeWidgets(
                   ),
                   if (isWrongCode) wrongActionIndicator(context),
                   verticalSpace(isWrongCode ? 20 : 80),
-                  resendCodeTimer(context),
+                  const ResendCodeTimer(),
                   verticalSpace(30),
                   confirmButton(context),
                   verticalSpace(30),
