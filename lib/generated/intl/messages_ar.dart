@@ -38,6 +38,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "باكمالك التسجيل فا أنت موافق علي الشروط والأحكام في PROMAISON",
     ),
     "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
+    "copyrights": MessageLookupByLibrary.simpleMessage("حقوق الملكية"),
+    "copyrightsContent": MessageLookupByLibrary.simpleMessage(
+      "PROMAISON شركة متخصصة في مجال الكهرباء، تكييف، مصاعد، السباكة، وخدمات أخرى وتمتلك الشركة خبرات وكوادر ذات كفاءة عالية ، ومعدات وأدوات حديثة لتنفيذ ٍ الاعمال، وتتركز أعمالنا- على الصيانة المنزلية وللمنشئات وتنفيذ المشاريع بشكل كاملو كما نقوم بإعادة التأسيس، ونلتزم بضمان الجودةوالاحترافية في كافة أعمالنا وخدماتنا-PROMAISON شركة متخصصة في مجال الكهرباء، تكييف، مصاعد، السباكة، وخدمات أخرى وتمتلك الشركة خبرات وكوادر ذات كفاءة عالية ، ومعدات وأدوات حديثة لتنفيذ ٍ الاعمال، وتتركز أعمالنا- على الصيانة المنزلية وللمنشئات وتنفيذ المشاريع بشكل كاملو كما نقوم بإعادة التأسيس، ونلتزم بضمان الجودةوالاحترافية في كافة أعمالنا وخدماتنا.",
+    ),
     "enterReceivedOTP": MessageLookupByLibrary.simpleMessage(
       "أدخل رمز التأكيد OTP المكون من 4 أرقام الذي تم إرساله إلى رقم الهاتف",
     ),
@@ -45,6 +49,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "ادخل رقم الجوال هنا",
     ),
     "getStarted": MessageLookupByLibrary.simpleMessage("هيا بنا نبدء"),
+    "introduction": MessageLookupByLibrary.simpleMessage("المقدمة"),
+    "introductionContent": MessageLookupByLibrary.simpleMessage(
+      "PROMAISON شركة متخصصة في مجال الكهرباء، تكييف، مصاعد، السباكة، وخدمات أخرى وتمتلك الشركة خبرات وكوادر ذات كفاءةعالية ، ومعدات وأدوات حديثة لتنفيذ ٍ الاعمال، وتتركز أعمالنا- على الصيانة المنزلية وللمنشئات وتنفيذ المشاريع بشكل كاملو كما نقوم بإعادة التأسيس، ونلتزم بضمان الجودةوالاحترافية في كافة أعمالنا وخدماتنا.",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول "),
     "loginUsingPhone": MessageLookupByLibrary.simpleMessage(
       "سجل الدخول باستخدام رقم الجوال",
@@ -57,6 +65,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "vip هي خدمة يمكنك الاشتراك بها باشتراك سنوي مع إمكانية الدفع بشكل شهري واضمن صيانة منزلك او منشأتك",
     ),
     "otp": MessageLookupByLibrary.simpleMessage("رمز تأكيد"),
+    "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+    "privacyPolicyContent": MessageLookupByLibrary.simpleMessage(
+      "PROMAISON شركة متخصصة في مجال الكهرباء، تكييف، مصاعد، السباكة، وخدمات أخرى وتمتلك الشركة خبرات وكوادر ذات كفاءة عالية ، ومعدات وأدوات حديثة لتنفيذ ٍ الاعمال، وتتركز أعمالنا- على الصيانة المنزلية وللمنشئات وتنفيذ المشاريع بشكل كاملو كما نقوم بإعادة التأسيس، ونلتزم بضمان الجودةوالاحترافية في كافة أعمالنا وخدماتنا-PROMAISON شركة متخصصة في مجال الكهرباء، تكييف، مصاعد، السباكة، وخدمات أخرى وتمتلك الشركة خبرات وكوادر ذات كفاءة عالية ، ومعدات وأدوات حديثة لتنفيذ ٍ الاعمال، وتتركز أعمالنا- على الصيانة المنزلية وللمنشئات وتنفيذ المشاريع بشكل كاملو كما نقوم بإعادة التأسيس، ونلتزم بضمان الجودةوالاحترافية في كافة أعمالنا وخدماتنا.",
+    ),
     "readConditions": MessageLookupByLibrary.simpleMessage("قراءة الشروط"),
     "requiredField": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
     "resend": MessageLookupByLibrary.simpleMessage("إعادة إرسال"),

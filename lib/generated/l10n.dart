@@ -239,6 +239,61 @@ class S {
       args: [],
     );
   }
+
+  /// `Introduction`
+  String get introduction {
+    return Intl.message(
+      'Introduction',
+      name: 'introduction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Copyrights`
+  String get copyrights {
+    return Intl.message('Copyrights', name: 'copyrights', desc: '', args: []);
+  }
+
+  /// `Privacy Policy`
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.`
+  String get introductionContent {
+    return Intl.message(
+      'PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.',
+      name: 'introductionContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations. PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.`
+  String get copyrightsContent {
+    return Intl.message(
+      'PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations. PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.',
+      name: 'copyrightsContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations. PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.`
+  String get privacyPolicyContent {
+    return Intl.message(
+      'PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations. PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.',
+      name: 'privacyPolicyContent',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -38,6 +38,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "By completing registration, you agree to the terms and conditions of PROMAISON",
     ),
     "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+    "copyrights": MessageLookupByLibrary.simpleMessage("Copyrights"),
+    "copyrightsContent": MessageLookupByLibrary.simpleMessage(
+      "PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations. PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.",
+    ),
     "enterReceivedOTP": MessageLookupByLibrary.simpleMessage(
       "Enter the 4-digit OTP sent to your phone number",
     ),
@@ -45,6 +49,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Enter your phone number here",
     ),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get started"),
+    "introduction": MessageLookupByLibrary.simpleMessage("Introduction"),
+    "introductionContent": MessageLookupByLibrary.simpleMessage(
+      "PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "loginUsingPhone": MessageLookupByLibrary.simpleMessage(
       "Log in using your phone number",
@@ -57,6 +65,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "VIP is a service you can subscribe to annually with the option of monthly payments, ensuring the maintenance of your home or facility.",
     ),
     "otp": MessageLookupByLibrary.simpleMessage("Verification Code"),
+    "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+    "privacyPolicyContent": MessageLookupByLibrary.simpleMessage(
+      "PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations. PROMAISON is a company specialized in the fields of electricity, air conditioning, elevators, plumbing, and other services. The company possesses extensive experience, highly skilled personnel, and modern equipment and tools to carry out tasks. Our work focuses on home and facility maintenance as well as full project implementation. We also handle re-establishments and are committed to quality and professionalism in all our services and operations.",
+    ),
     "readConditions": MessageLookupByLibrary.simpleMessage("Read the terms"),
     "requiredField": MessageLookupByLibrary.simpleMessage(
       "This field is required",
